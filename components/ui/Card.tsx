@@ -1,0 +1,17 @@
+import React from 'react';
+
+interface CardProps {
+    children: React.ReactNode;
+    className?: string;
+    hover?: boolean;
+}
+
+export const Card: React.FC<CardProps> = ({ children, className = '', hover = false }) => {
+    const hoverStyles = hover ? 'hover:shadow-lg hover:-translate-y-1' : '';
+
+    return (
+        <div className={`bg-muted rounded-xl p-6 transition-all duration-300 ${hoverStyles} ${className}`}>
+            {children}
+        </div>
+    );
+};
