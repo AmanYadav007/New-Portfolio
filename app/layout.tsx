@@ -59,9 +59,11 @@ export const metadata: Metadata = {
     images: ["/images/projects/profile.png"],
   },
   icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon.ico",
+    icon: "/images/favicon/favicon.ico",
+    shortcut: "/images/favicon/favicon.ico",
+    apple: "/images/favicon/apple-touch-icon.png",
   },
+  manifest: '/images/favicon/site.webmanifest',
   robots: {
     index: true,
     follow: true,
