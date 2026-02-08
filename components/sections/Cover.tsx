@@ -66,16 +66,18 @@ export const Cover: React.FC = () => {
                 }}
             ></div>
 
-            <div className="container relative z-10 flex-grow flex flex-col justify-center">
-                {/* Top Badge */}
-                <div ref={issueRef} className="absolute top-0 right-6 md:right-24 rotate-12">
-                    <div className="bg-[#FFD700] border-4 border-black p-4 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] transform hover:scale-105 transition-transform duration-300">
-                        <p className="font-comic font-bold text-xl uppercase tracking-widest text-black">
-                            Issue #01
-                        </p>
-                        <p className="text-xs font-bold text-center mt-1">First Edition</p>
-                    </div>
+            {/* Top Badge */}
+            <div ref={issueRef} className="absolute top-6 right-6 md:right-24 rotate-12 z-20">
+                <div className="bg-[#FFD700] border-4 border-black p-4 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] transform hover:scale-105 transition-transform duration-300">
+                    <p className="font-comic font-bold text-xl uppercase tracking-widest text-black">
+                        Issue #01
+                    </p>
+                    <p className="text-xs font-bold text-center mt-1">First Edition</p>
                 </div>
+            </div>
+
+            <div className="container relative z-10 flex-grow flex flex-col justify-center">
+
 
                 {/* Main Title */}
                 <div className="mb-12">
@@ -111,7 +113,7 @@ export const Cover: React.FC = () => {
                         <span className="font-comic text-xl font-bold text-gray-500">Pricing: $70–100 / hour</span>
                     </div>
 
-                    <div className="flex items-center gap-4 md:gap-8">
+                    <div className="flex flex-col items-end gap-4 md:flex-row md:items-center md:gap-8">
                         {/* Author Photo */}
                         <div className="hidden md:block w-32 h-40 border-4 border-black transform rotate-2 relative shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] bg-white overflow-hidden">
                             <Image
