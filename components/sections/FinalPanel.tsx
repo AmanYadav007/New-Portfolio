@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { gsap } from 'gsap';
-import { FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaTwitter, FaInstagram } from 'react-icons/fa';
 
 export const FinalPanel: React.FC = () => {
     const [hasClickedQuestion, setHasClickedQuestion] = React.useState(false);
@@ -99,27 +99,34 @@ export const FinalPanel: React.FC = () => {
                                 Open to full-time roles, contracts, and interesting problems.
                             </p>
 
-                            <div className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-10 w-full">
+                            <div className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-8 w-full flex-wrap">
                                 <a href="https://www.linkedin.com/in/aman-yadav-9144021a3/" target="_blank" rel="noopener noreferrer"
                                     className="flex items-center justify-center gap-3 font-bold hover:text-accent transition-colors group/link text-lg w-full md:w-auto p-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-lg">
-                                    <div className="p-3 bg-white text-black border-2 border-black rounded-full group-hover/link:scale-110 group-hover/link:-translate-y-1 transition-all duration-200 shadow-[2px_2px_0px_0px_#000]">
-                                        <FaLinkedin />
+                                    <div className="p-3 bg-white text-[#0077B5] border-2 border-black rounded-full group-hover/link:scale-110 group-hover/link:-translate-y-1 transition-all duration-200 shadow-[2px_2px_0px_0px_#000]">
+                                        <FaLinkedin className="text-xl" />
                                     </div>
                                     <span className="uppercase group-hover/link:underline decoration-wavy decoration-accent underline-offset-4">LinkedIn</span>
                                 </a>
                                 <a href="https://github.com/AmanYadav007" target="_blank" rel="noopener noreferrer"
                                     className="flex items-center justify-center gap-3 font-bold hover:text-accent transition-colors group/link text-lg w-full md:w-auto p-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-lg">
-                                    <div className="p-3 bg-white text-black border-2 border-black rounded-full group-hover/link:scale-110 group-hover/link:-translate-y-1 transition-all duration-200 shadow-[2px_2px_0px_0px_#000]">
-                                        <FaGithub />
+                                    <div className="p-3 bg-white text-[#333] border-2 border-black rounded-full group-hover/link:scale-110 group-hover/link:-translate-y-1 transition-all duration-200 shadow-[2px_2px_0px_0px_#000]">
+                                        <FaGithub className="text-xl" />
                                     </div>
                                     <span className="uppercase group-hover/link:underline decoration-wavy decoration-accent underline-offset-4">GitHub</span>
                                 </a>
                                 <a href="https://x.com/Amanyad57536099" target="_blank" rel="noopener noreferrer"
                                     className="flex items-center justify-center gap-3 font-bold hover:text-accent transition-colors group/link text-lg w-full md:w-auto p-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-lg">
                                     <div className="p-3 bg-white text-black border-2 border-black rounded-full group-hover/link:scale-110 group-hover/link:-translate-y-1 transition-all duration-200 shadow-[2px_2px_0px_0px_#000]">
-                                        <FaTwitter />
+                                        <FaTwitter className="text-xl" />
                                     </div>
                                     <span className="uppercase group-hover/link:underline decoration-wavy decoration-accent underline-offset-4">X / Twitter</span>
+                                </a>
+                                <a href="https://www.instagram.com/i_m.aman.yadav/" target="_blank" rel="noopener noreferrer"
+                                    className="flex items-center justify-center gap-3 font-bold hover:text-accent transition-colors group/link text-lg w-full md:w-auto p-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-lg">
+                                    <div className="p-3 bg-white text-[#E1306C] border-2 border-black rounded-full group-hover/link:scale-110 group-hover/link:-translate-y-1 transition-all duration-200 shadow-[2px_2px_0px_0px_#000]">
+                                        <FaInstagram className="text-xl" />
+                                    </div>
+                                    <span className="uppercase group-hover/link:underline decoration-wavy decoration-accent underline-offset-4">Instagram</span>
                                 </a>
                             </div>
 
